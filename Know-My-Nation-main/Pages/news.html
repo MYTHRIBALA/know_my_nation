@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="/styles/news-style.css" />
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+    <style>
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+      }
+      .card img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+          <h3>KnowMyNation</h3>
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="business"
+              onclick="onNavItemClick('politics')"
+            >
+              NEWS
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            id="search-text"
+            type="text"
+            class="news-input"
+            placeholder="e.g. Science"
+          />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h1>LIVE</h1>
+      <div class="cards-container container flex" id="cards-container">
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/yjm6yz9ua54?feature=shared')">
+          <img src="img\ndtv.png" alt="Polimer News Logo">
+          <h3>NDTV News</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/Lu5G_yDpv18?si=rTzlENrL6tWU66SO')">
+          <img src="img\republictv.png" alt="Polimer News Logo">
+          <h3>Republic Now</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/E9Ma0vUquMg?si=ZM-g8kT-pF24q4bx')">
+          <img src="img\news18.png" alt="Polimer News Logo">
+          <h3>News18</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/VcKk_XR9t5w?si=wzW3w6IkOSPmn4iS')">
+          <img src="img\times now.png" alt="Polimer News Logo">
+          <h3>Times Now</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/RUzgphgBRzI?si=jx0JMNDNzRQxZGoD')">
+          <img src="img\Puthiya-thalaimurai.jpg" alt="Polimer News Logo">
+          <h3>PuthiyathalaimuraiTV</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/Ko18SgceYX8?si=3iBdYSJyPD0dwyha')">
+          <img src="img\asianet.png" alt="Polimer News Logo">
+          <h3>Asianetnews</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/hriIErhsMis?si=K4c8aPSOueNaZtMJ')">
+          <img src="img\polimer.jpg" alt="Polimer News Logo">
+          <h3>Polimer News</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/PzLu6A4ZLPI?si=vGWP1SEi3HIMTmx9')">
+          <img src="img\NBC_News.png" alt="Polimer News Logo">
+          <h3>NBC News</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/Nq2wYlWFucg?si=_iUxkZAp7oOQkG8X')">
+          <img src="img\Aaj_tak.png" alt="Polimer News Logo">
+          <h3>Aaj Tak</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/Jk_kvzVTXYo?si=Lz6V8OoyKYSf3L7T')">
+          <img src="img\wion.png" alt="Polimer News Logo">
+          <h3>WION</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/dQY4QcVA-gs?si=-wGNbbILrX70irFE')">
+          <img src="img\abn_telugu.jpeg" alt="Polimer News Logo">
+          <h3>ABN Telugu</h3>
+        </div>
+        <div class="card" onclick="openYouTubeVideo('https://www.youtube.com/live/m0MD6Ukm0cQ?si=kQaOYSexBq4X1bTE')">
+          <img src="img\abp majha.png" alt="Polimer News Logo">
+          <h3>ABP MAJHA</h3>
+        </div>
+      </div>
+    </main>
+
+    <script src="/scripts/script-news.js"></script>
+    <script>
+      function openYouTubeVideo(name) {
+        window.location.href = name;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Channels</title>
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .card {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .card img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+  }
+  .card h3 {
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 14px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="card">
+    <img src="channel1_logo.jpg" alt="Channel 1 Logo">
+    <h3>Channel 1</h3>
+    <p>Channel 1 is your source for breaking news, analysis, and exclusive interviews.</p>
+  </div>
+  <div class="card">
+    <img src="channel2_logo.jpg" alt="Channel 2 Logo">
+    <h3>Channel 2</h3>
+    <p>Channel 2 delivers comprehensive coverage of national and international news.</p>
+  </div>
+  <div class="card">
+    <img src="channel3_logo.jpg" alt="Channel 3 Logo">
+    <h3>Channel 3</h3>
+    <p>Channel 3 focuses on in-depth investigations and special reports.</p>
+  </div>
+  <!-- Add more cards as needed -->
+</div>
+
+</body>
+</html>
